@@ -1,0 +1,36 @@
+body {
+  /* make the body fits our viewport */
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  position: relative;
+}
+
+.wrap canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+button {
+  position: relative;
+  z-index: 10;
+  width: 120px;
+  height: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #63a4ff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
